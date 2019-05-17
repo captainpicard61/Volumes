@@ -1,38 +1,26 @@
+/*global $*/
+/*global bookTitle*/
+/*global authors*/
+/*global publishers*/
 
+var library ={
+background_image: "background-books-bookshelves-1193603.jpg",
 
+};
 
-
-
-$('#startruck').click(function() {
+$('#starstruck').click(function() {
         var searchTerm = $("#searchTerm").val();
-        var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=" + searchterm;
+        var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=" + searchTerm;
   
-
-
-
-
 $.ajax({
     url: bookUrl,
     method:"GET",
     success: function(response) {
         
         console.log(response);
-            
-            Booktitle = response.items[0].volumeInfo.title;
-            Authors = response.items[0].volumeInfo.author[0];
-            Publishers = response.items[0].volumeInfo.publisher;
-            PubDate = response.items[0].volumeInfo.publishedDate;
-            Description = response.item[0].volumeInfo.description;
-            
-
+            bookTitle = response.items[0].volumeInfo.title;
+            authors = response.items[0].volumeInfo.author[0];
+            publishers = response.items[0].volumeInfo.publisher;
     }    
-        
-        
     });
-    
-    
-    
-   });
-
-
- 
+});

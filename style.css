@@ -1,0 +1,125 @@
+body{
+    font-family:'Niconne', cursive;
+    color:brown;
+    font-size:20px;
+    text-align:center;
+  background-image: linear-gradient(darkBlue, brown);
+}
+
+/*Navbar*/
+ul {
+  border-radius: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Brown;
+  transition: 0.5s;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  border-radius: 30px;
+  display: block;
+  color: darkBlue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color:darkBlue;
+  color:brown;
+}
+
+input {
+  border-radius: 30px;
+  border: none;
+  color: brown;
+  background-image: linear-gradient(brown, darkBlue);
+  text-align: center;
+  font-size: 28px;
+  padding: 0px;
+  width: 250px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+input span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+input:hover span {
+  padding-right: 25px;
+}
+
+input:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+button {
+  border-radius: 30px;
+  border: none;
+  color: brown;
+  background-image: linear-gradient(brown, darkBlue);
+  text-align: center;
+  font-size: 28px;
+  padding: 0px;
+  width: 200px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+placeholder {
+  color:darkBlue;
+}
+/*Yes Vaughn Coded this*/
