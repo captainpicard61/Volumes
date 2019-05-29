@@ -3,7 +3,13 @@ body{
     color:brown;
     font-size:20px;
     text-align:center;
-  background-image: linear-gradient(darkBlue, brown);
+  /*background-image: linear-gradient(darkBlue, brown);*/
+  background-image:url(ancient-antique-architectural-design-442420.jpg);
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+  background-attachment: fixed;
+  background-position: center; 
+
 }
 
 /*Navbar*/
